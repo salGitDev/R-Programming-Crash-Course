@@ -1,1 +1,146 @@
 
+Introduction 12-11-2023 00:00:00-00:12:20
+
+Making R Markdown Script File and First Hello World Programme 00:12:25-00:18-20
+
+!
+pirnt("Hello Worlld")
+
+!
+
+Hot Keys 00:18:25-00:24:00
+
+Comment Ctrl Shift C
+
+my_string <- "Comment with Ctrl Shift C"
+7
+7 + 7
+
+7 - 7
+
+7 * 7
+
+7 % 4
+
+Data Types 00:24:02-00:39:00
+
+1. Vector
+Single Data Type
+ 
+2. list
+list can contains vectors with different data types
+
+3. matrices
+Base R 
+
+4. arrays
+
+5. factors
+Categorical Variables 
+
+6. Data Frames 
+Data Set in a tabular form
+
+
+!
+#Vector
+ligical_vector <- T
+print(class(vector1))
+
+numeric_vector <- 3
+print(class(numeric_vector))
+
+int_vector <- 2L
+print(class(int_vector))
+
+complex_vector <- 1 + 2i
+print(class(complex_vector))
+char_vector <- "Hello"
+print(class(char_vector))
+!
+
+#Combine multiple vector
+!
+apple <- c("red", "green", "yellow", "cyan")
+print(apple)
+print(class(apple))
+!
+
+#List
+list <- list(c(2, 5, 3), 21., 3, sin, T)
+print(class(list))
+
+
+
+
+#Matrices
+a_matrix <- matrix(c("a", "a", "b", "c", "b", "a"), nrow = 2, ncol = 3, byrow = T)
+print(class(a_matrix))
+print(a_matrix)
+
+#Arrays
+#The array of vector below will repeat the colors
+a_array <- array(c("green", "yellow"), dim = c(3, 3, 3))
+print(class(a_array))
+print(a_array)
+
+
+#Factors
+#Categorical data 
+apple_colors <- c("green", "yellow", "red", "red", "green")
+print(class(apple_colors))
+print(apple_colors)
+factor_apple <- factor(apple_colors)
+print(factor_apple)
+print(nlevels(factor_apple))
+
+#Data Frame
+BMI <- data.frame(
+  
+  gender = c("Male", "Male", "Female"),
+  height = c(152, 171.5, 165),
+  weight = c(81, 93, 78),
+  age    = c(42, 35, 26)
+)
+
+print(BMI)
+
+#Data Frame
+BMI <- data.frame(
+  
+  gender = c("Male", "Male", "Female"),
+  height = c(152, 171.5, 165),
+  weight = c(81, 93, 78),
+  age    = c(42, 35, 26)
+)
+
+print(BMI)
+
+
+Working with Built in Data 00:40:00 -
+
+
+
+
+
+go(fmk(eat(put_on(wakeup("self") "clothes") "breakfast")) = "to work")
+
+library("tidyverse")
+mpg %>%
+dplyr::filter(model == "maxima")
+
+library("tidyverse")
+mpg %>%
+dplyr::filter(model == "a4")
+
+library("tidyverse")
+mpg %>%
+dplyr::filter(model == "a4") %>%
+dplyr::arrange(displ, cyl) %>%
+dplyr::mutate('old' = year < 2000)
+
+
+
+
+
+
